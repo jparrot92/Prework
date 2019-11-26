@@ -3,6 +3,7 @@
 ## Tabla de Contenido<!-- omit in toc -->
 - [Introducción a la línea de comandos](#introducción-a-la-línea-de-comandos)
   - [Manejo archivos y directorios](#manejo-archivos-y-directorios)
+  - [Herramientas básicas (Comandos CAT, MORE, TAIL y OPEN)](#herramientas-básicas-comandos-cat-more-tail-y-open)
   
 ## Introducción a la línea de comandos
 
@@ -22,3 +23,9 @@
 * **nano**: Es un editor dentro de la consola, podemos abrir cualquier archivo y modificarlo.
 * **mv**: Permite mover archivos entre distintas carpetas, solamente debemos indicarle el nombre del archivo y la ruta de destino.
 * **rm**: Elimina únicamente un archivo, añadiendo el parámetro -rf podemos eliminar directorios también.
+
+### Herramientas básicas (Comandos CAT, MORE, TAIL y OPEN)
+* **cat**: permite visualizar un archivo completo en la terminal.
+* **more**: muestra por partes un archivo dentro de la terminal.
+* **tail**: muestra las últimas 10 líneas de cada archivo, se puede modificar pasándole el parámetro con el número de líneas -15.
+* **open**: abre un archivo con el programa que tengamos por defecto.
