@@ -5,6 +5,7 @@
   - [Instalación de Ubuntu Bash en Windows](#instalación-de-ubuntu-bash-en-windows)
   - [Manejo archivos y directorios](#manejo-archivos-y-directorios)
   - [Herramientas básicas (Comandos CAT, MORE, TAIL y OPEN)](#herramientas-básicas-comandos-cat-more-tail-y-open)
+  - [Crea llaves SSH](#crea-llaves-ssh)
   
 ## Introducción a la línea de comandos
 
@@ -20,7 +21,6 @@ Luego entra a la opción de Actualizaciones y Seguridad
 En el menú de la izquierda has click en opciones para desarrolladores y habilita el “Modo Desarrollador”
 ![terceraImagen](https://user-images.githubusercontent.com/18260051/69757005-1da16000-115c-11ea-80db-ee36cb5f80c6.png)
 ![CuartaImagen](https://user-images.githubusercontent.com/18260051/69757001-1da16000-115c-11ea-9521-700207c4de6f.png)
-
 
 Después, accede al panel de control y haz click en “Programas”
 
@@ -60,6 +60,16 @@ Luego, ejecuta Ubuntu, crea tu usuario y contraseña y estás lista o listo para
 * **tail**: muestra las últimas 10 líneas de cada archivo, se puede modificar pasándole el parámetro con el número de líneas -15.
 * **open**: abre un archivo con el programa que tengamos por defecto.
 
+### Crea llaves SSH
+Las llaves SSH nos van a ayudar para autentificarnos con servidores. SSH utiliza criptografía asimétrica, o sea, tenemos dos llaves:
 
+* **Pública**: la llave pública la podemos compartir por internet.
+* **Privada**: debes tenerla en un sitio seguro y no debe ser compartida.
+Tener una llave SSH nos permitirá una conexión fácil y segura con servidores, en el caso de la escuela de JavaScript nos va a servir para conectarnos con GitHub.
+
+Para crear una llave SSH utilizamos el siguiente comando:
+```bash
+ssh-keygen -t rsa -b 4096 -C llave, puede ser tu correo> 
+```
 
 
