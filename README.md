@@ -9,7 +9,10 @@
 - [Configuración entorno de desarrollo](#configuración-entorno-de-desarrollo)
   - [Cómo instalar NodeJS](#cómo-instalar-nodejs)
   - [Instalación y configuración de VSCode](#instalación-y-configuración-de-vscode)
-  
+- [Git y GitHub](#git-y-github)
+  - [¿Qué es Git, para qué se usa y qué resuelve?](#qué-es-git-para-qué-se-usa-y-qué-resuelve)
+
+
 ## Introducción a la línea de comandos
 
 ### Instalación de Ubuntu Bash en Windows
@@ -167,3 +170,10 @@ Existen multiples editores de código, para la escuela de JavaScript vamos a uti
 * **ESLint**: es una herramienta de análisis de código estático para identificar patrones problemáticos encontrados en el código JavaScript, o sea, nuestro linter. Debemos instalar y configurar eslint para que siga el estilo de código que le indiquemos.
 * **Color Highlight**: resalta el color que estemos escribiendo.
 * **SASS**: es un preprocesador de CSS.
+
+## Git y GitHub
+
+### ¿Qué es Git, para qué se usa y qué resuelve?
+Git es un sistema de control de versiones que nos permite llevar un histórico sobre los cambios de nuestro proyecto, no es el único sistema de control de versiones, pero sí el más usado. Fue creado por Linus Torvalds. **Git y GitHub no son lo mismo**, uno es el sistema de control de versiones y el otro es la red social de programadores.
+
+Los repositorios son una estructura de datos que almacenan información sobre archivos y directorios. Es el inicio de todo proyecto con Git, dentro de un repositorio encontraremos **ramas**, no son más que la duplicación de un objeto bajo un repositorio, permite trabajar en paralelo para al final unir los cambios.
