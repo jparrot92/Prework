@@ -6,6 +6,8 @@
   - [Manejo archivos y directorios](#manejo-archivos-y-directorios)
   - [Herramientas básicas (Comandos CAT, MORE, TAIL y OPEN)](#herramientas-básicas-comandos-cat-more-tail-y-open)
   - [Crea llaves SSH](#crea-llaves-ssh)
+- [Configuración entorno de desarrollo](#configuración-entorno-de-desarrollo)
+  - [Cómo instalar NodeJS](como-instalar-nodejs)
   
 ## Introducción a la línea de comandos
 
@@ -72,4 +74,85 @@ Para crear una llave SSH utilizamos el siguiente comando:
 ssh-keygen -t rsa -b 4096 -C llave, puede ser tu correo> 
 ```
 
+## Configuración entorno de desarrollo
 
+### Cómo instalar NodeJS
+Node es el entorno de ejecución que tenemos para JavaScript en el lado del servidor, está basado en el motor V8 de Google Chrome. Fue creado por Ryan Dahl en el 2009, es Open Source y multiplataforma.
+
+**Revisión de Node en nuestro sistema**
+
+En la mayoría de sistemas basados en Unix ya viene instalado por defecto Node, para asegurarnos de que esté instalado debemos irnos a nuestra terminal de comandos y ejecutar:
+```bash
+$ node -v
+```
+
+Esto nos debería mostrar la versión de node que tenemos instalados en el sistema, por ejemplo:
+```bash
+$ node -v v12.4.0
+```
+
+Si la respuesta que obtenemos es:
+```bash
+$ node -v command not found: node
+```
+
+Debemos instalarlo
+
+**Instalación de Node en MacOS**
+
+Para esta instalación vamos a requerir de homebrew. Este es un gestor de paquetes excelente para Mac y que vamos a usar en varias clases de este curso, si no lo tienes instalado lo mejor es que lo hagas. En este link https://brew.sh/index_es encontrarás los pasos necesarios para instalarlo.
+Una vez tengamos instalado homebrew solo debemos ejecutar en la terminal
+```bash
+$ brew install node
+```
+
+Este proceso podría tardar un rato dependiendo de la velocidad a la conexión a internet, ya que cuando se intenta instalar un paquete con homebrew este intenta actualizar todos los paquetes que se han instalado con él. Una vez esté listo puedes escribir en la terminal:
+```bash
+$ node -v
+```
+
+y ya debería aparecerte la versión instalada que tienes de Node. Igualmente, con npm ejecutaremos:
+```bash
+$ npm -v
+```
+
+y debería salirte la versión que tienes de npm.
+
+**Instalación de Node en Linux**
+
+Dependiendo de tu distribución de Linux deberás ejecutar comandos distintos, esto porque entre distribuciones cambiar el gestor de paquetes:
+En distribuciones basadas en Debian y Ubuntu debes ejecutar:
+```bash
+$ sudo apt update
+```
+```bash
+$ sudo apt install nodejs
+```
+```bash
+$ sudo apt install npm
+```
+
+En distribuciones basadas en Arch:
+```bash
+$ pacman -S nodejs npm
+```
+
+**Instalación de Node en Windows:**
+
+Esta es la instalación más sencilla y es una instalación clásica en Windows, únicamente descargamos un programa y le damos continuar, o si prefieres configuras la instalación según las opciones que están disponibles. El programa se descarga desde acá https://nodejs.org/en/#download y seleccionas la versión que desees (recomendada la versión igual o superior a las 12)
+
+**Cómo ejecutar Node**
+
+Una vez se tenga instalado Node en el sistema podemos hacer uso de él, en esta clase haremos un uso básico de sus comandos, a lo largo de la Escuela de JavaScript será utilizado. Lo primero que haremos será ejecutarlo y escribir un Hola mundo. En la terminal haremos lo siguiente:
+```bash
+$ node
+> console.log('Hola mundo')
+Hola mundo
+>
+```
+
+Al escribir node se nos abrirá un shell interactivo donde podremos escribir código en JavaScript. Esta herramienta es esencial en el desarrollo porque es aquí donde podremos probar funcionalidades antes de insertarlas en nuestro proyecto.
+
+**Cómo utilizar npm**
+
+npm es el manejador de paquetes de Node con él podemos instalar dependencias a nuestro proyecto o instalar programas globalmente en nuestro sistema.
