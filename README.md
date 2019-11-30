@@ -7,7 +7,8 @@
   - [Herramientas básicas (Comandos CAT, MORE, TAIL y OPEN)](#herramientas-básicas-comandos-cat-more-tail-y-open)
   - [Crea llaves SSH](#crea-llaves-ssh)
 - [Configuración entorno de desarrollo](#configuración-entorno-de-desarrollo)
-  - [Cómo instalar NodeJS](como-instalar-nodejs)
+  - [Cómo instalar NodeJS](#cómo-instalar-nodejs)
+  - [Instalación y configuración de VSCode](#instalación-y-configuración-de-vscode)
   
 ## Introducción a la línea de comandos
 
@@ -156,3 +157,13 @@ Al escribir node se nos abrirá un shell interactivo donde podremos escribir có
 **Cómo utilizar npm**
 
 npm es el manejador de paquetes de Node con él podemos instalar dependencias a nuestro proyecto o instalar programas globalmente en nuestro sistema.
+
+## Instalación y configuración de VSCode
+Si la primera mejor amiga del programador es la línea de comandos, es momento de instalar y configurar el segundo mejor amigo del programador: el **editor de código.**
+
+Existen multiples editores de código, para la escuela de JavaScript vamos a utilizar Visual Studio Code. Vamos a añadir diferentes plugins para VSCode:
+
+* **Git Blame**: va a mostrar el autor de la línea de código en la que estemos trabajando.
+* **ESLint**: es una herramienta de análisis de código estático para identificar patrones problemáticos encontrados en el código JavaScript, o sea, nuestro linter. Debemos instalar y configurar eslint para que siga el estilo de código que le indiquemos.
+* **Color Highlight**: resalta el color que estemos escribiendo.
+* **SASS**: es un preprocesador de CSS.
