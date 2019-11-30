@@ -11,6 +11,7 @@
   - [Instalación y configuración de VSCode](#instalación-y-configuración-de-vscode)
 - [Git y GitHub](#git-y-github)
   - [¿Qué es Git, para qué se usa y qué resuelve?](#qué-es-git-para-qué-se-usa-y-qué-resuelve)
+  - [Instalación de Git](#instalación-de-git)
 
 
 ## Introducción a la línea de comandos
@@ -177,3 +178,51 @@ Existen multiples editores de código, para la escuela de JavaScript vamos a uti
 Git es un sistema de control de versiones que nos permite llevar un histórico sobre los cambios de nuestro proyecto, no es el único sistema de control de versiones, pero sí el más usado. Fue creado por Linus Torvalds. **Git y GitHub no son lo mismo**, uno es el sistema de control de versiones y el otro es la red social de programadores.
 
 Los repositorios son una estructura de datos que almacenan información sobre archivos y directorios. Es el inicio de todo proyecto con Git, dentro de un repositorio encontraremos **ramas**, no son más que la duplicación de un objeto bajo un repositorio, permite trabajar en paralelo para al final unir los cambios.
+
+### Instalación de Git
+Git es un programa que nos permite llevar control de versiones de un proyecto, en esta clase vamos a aprender cómo instalarlo y configurar ciertos parámetros básicos, a lo largo de este curso haremos un configuración más avanzada de Git.
+
+Antes de que instalemos Git es necesario que revisemos si ya está instalado en nuestro sistema, por lo general en los sistemas operativos basados en Unix está instalado (MacOS o Linux); para verificar escribimos en la terminal de comandos:
+```bash
+$ git --version
+git version 2.17.2
+```
+Si el comando aparece y retorna una versión quiere decir que fue está instalado dentro del sistema y no necesita hacerse una instalación.
+
+**Instalar Git en MacOs**
+
+Podemos hacer uso de homebrew para la instalación o de un instalador que encuentras en este link https://sourceforge.net/projects/git-osx-installer/files/. Si decides instalarlo por homebrew debes ejecutar en la terminal de comando:
+```bash
+$ brew install git
+```
+**Instalar Git en Linux**
+
+Dependiendo de la distribución de Linux que tenga el proceso de instalación cambia, esto debido a que cada distribución utiliza un programa distinto para manejar los paquetes.
+
+Para distribuciones basadas en Debian y Ubuntu:
+```bash
+$ sudo apt-get update $ sudo apt-get install git
+```
+
+**Instalar Git en Windows**
+
+Es como instalar una aplicación más en Windows, el instalador lo consigues acá https://gitforwindows.org, debes descargarlo y abrirlo. Allí se te abrirá una ventana de instalación y solo debes seguir los pasos que te diga.
+
+Git nos instala una terminal que se llama git shell esto es una terminal distinta a la que trae el sistema operativo, es muy similar a la que podríamos tener en Unix, incluso puede ser un reemplazo de Hyper o de la terminal de Ubuntu.
+
+**Configurar Git**
+
+Para comprobar que la instalación fue exitosa debemos repetir el comando que escribimos al inicio:
+```bash
+$ git --version
+git version 2.17.2
+```
+
+Aquí ya debería mostrar una versión instalada. No es necesario que sea la misma versión que vemos en esta clase, si instala una superior no pasa nada.
+
+La configuración que haremos es poner dentro de git nuestro nombre y correo electrónico, para que de esta manera todo lo que hagamos esté de cierta forma “firmado” con nuestros datos. Debemos irnos a la terminal de comandos y ejecutar:
+```bash
+$ git config --global user.name "Pachito Lopez"
+$ git config --global user.email "pachito@lopez.co"
+```
+Allí deberás completar tu información personal, esta que acabamos de poner es solo de ejemplo, no es real.
