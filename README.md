@@ -12,6 +12,7 @@
 - [Git y GitHub](#git-y-github)
   - [¿Qué es Git, para qué se usa y qué resuelve?](#qué-es-git-para-qué-se-usa-y-qué-resuelve)
   - [Instalación de Git](#instalación-de-git)
+  - [Cómo crear un repositorio, primer commit, reset y logs](#cómo-crear-un-repositorio-primer-commit-reset-y-logs)
 
 
 ## Introducción a la línea de comandos
@@ -226,3 +227,27 @@ $ git config --global user.name "Pachito Lopez"
 $ git config --global user.email "pachito@lopez.co"
 ```
 Allí deberás completar tu información personal, esta que acabamos de poner es solo de ejemplo, no es real.
+
+### Cómo crear un repositorio, primer commit, reset y logs
+Aprende el flujo básico de Git: crear un repositorio, crear un commit y ver un histórico de los commits.
+
+Para comenzar con un nuevo repositorio en Git debemos correr el siguiente comando:
+```bash
+git init
+```
+Al correr el comando nuestra terminal nos va a mostrar que nos encontramos dentro de la rama master, la rama principal de todo proyecto en Git. Además, si ejecutamos *ls -la* veremos que hay una carpeta oculta llamada “.git”.
+
+Todo cambio tiene varios estados dentro de Git:
+
+* Sin seguimiento
+* Sin cambios
+* Con cambios
+* En stagging
+
+Para ver el estado del repositorio ejecutamos el comando *git status*. Podemos añadir un archivo con el comando *git add 'nombre del archivo'*, una vez lo tenemos añadido podemos dar commit con el comando *git commit -m 'mensaje del commit'*. Con *git log* podemos visualizar un histórico de los commits.
+
+Dentro de Git es posible regresar entre commits con el comando *git reset*, tenemos dos opciones para regresar:
+
+* *--soft*: vamos a movernos al commit que le indiquemos, sin eliminar los commits de por medio.
+* *--hard*: nos movemos al commit que indiquemos y regresamos el repositorio al estado del commit, borrando todos los commits de por medio.
+
